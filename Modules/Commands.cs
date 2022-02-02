@@ -25,7 +25,6 @@ namespace WorstPossibleUserExperience.Modules
                 rng.GetBytes(bytes);
             }
 
-            // and if you need it as a string...
             string hash1 = BitConverter.ToString(bytes);
 
             var EmbedBuilderLog = new EmbedBuilder()
@@ -38,7 +37,6 @@ namespace WorstPossibleUserExperience.Modules
        });
             var built = EmbedBuilderLog.Build();
             await ch.SendMessageAsync(embed: built);
-          //  await ReplyAsync(reason);
         }
             
         public string FilterRetardation(string msg) {

@@ -86,7 +86,6 @@ namespace WorstPossibleUserExperience
                 tw.WriteLine(s);
 
             tw.Close();
-            //System.IO.File.WriteAllLines(KnownFolders.GetPath(KnownFolders.KnownFolder.Documents) + "\\wuep.txt", duh);
         }
 
         private async Task HandleCommandAsync(SocketMessage arg)
@@ -95,11 +94,8 @@ namespace WorstPossibleUserExperience
             var context = new SocketCommandContext(_client, message);
             if (message.Author.IsBot) return;
 
-            int argPos = 0;
-
             if (message.Channel is IPrivateChannel) {
                 await SendAMessage(arg, message, context);
-            //    await context.User.SendMessageAsync("CuMMIN");
             }
 
         }
