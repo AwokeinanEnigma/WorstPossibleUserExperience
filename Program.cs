@@ -19,7 +19,6 @@ namespace WorstPossibleUserExperience
         private DiscordSocketClient _client;
         private CommandService _commands;
         private IServiceProvider _services;
-        private StreamWriter wroter;
 
         public async Task RunBotAsync()
         {
@@ -70,10 +69,7 @@ namespace WorstPossibleUserExperience
                 }
             }
 
-            //var channel = _client.GetGuild(3).GetChannel(4);
-            if (wroter == null || wroter.BaseStream == null) {
-                wroter = new StreamWriter(KnownFolders.GetPath(KnownFolders.KnownFolder.Documents) + "\\wuep.txt");
-            }
+
             int argPos = 0;
             if (message.HasStringPrefix("__", ref argPos))
             {
