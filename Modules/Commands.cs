@@ -9,7 +9,7 @@ using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 
-namespace TutorialBot.Modules
+namespace WorstPossibleUserExperience.Modules
 {
     public class Commands : ModuleBase<SocketCommandContext>
     {

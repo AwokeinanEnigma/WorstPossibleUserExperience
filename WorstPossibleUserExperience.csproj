@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C9E77AD7-BF14-4D9D-9385-D18C133AD3F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TutorialBot</RootNamespace>
-    <AssemblyName>TutorialBot</AssemblyName>
+    <RootNamespace>WorstPossibleUserExperience</RootNamespace>
+    <AssemblyName>WorstPossibleUserExperience</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
